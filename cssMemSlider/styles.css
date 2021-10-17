@@ -131,3 +131,29 @@ p {
     margin-left: 20px;
     margin-top: 20px;
 }
+
+@media (max-width: 615px) {
+    .slider {
+        width: 80%;
+        height: 50%;
+    }
+    .slide img {
+        width: 60%;
+        height: 70%;
+    }
+    .btn1 {
+        margin-left: 120px;
+    }
+    .btn2 {
+        margin-left: 150px;
+    }
+    .btn3 {
+        margin-left: 180px;
+    }
+    .btn4 {
+        margin-left: 210px;
+    }
+    .btn {
+        margin-top: 360px;
+    }
+}
