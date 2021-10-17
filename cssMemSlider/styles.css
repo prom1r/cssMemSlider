@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: 604px;
+    height: 624px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btns {
+    position: absolute;
+    bottom: 17px;
+    left: 80%;
+    display: flex;
+}
+
+.btn {
+    width: 15px;
+    height: 15px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: teal;
+    border-radius: 25px;
+    transition: all .4s linear;
+    /* opacity: 0.5; */
+    margin-top: 590px;
+    position: absolute;
+}
+
+.btn1 {
+    margin-left: 450px;
+}
+
+.btn2 {
+    margin-left: 480px;
+}
+
+.btn3 {
+    margin-left: 510px;
+}
+
+.btn4 {
+    margin-left: 540px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+input[name='radio'] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 2416px;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.6s ease;
+    background-color: turquoise
+}
+
+.slide img {
+    width: 100%;
+    height: 90%;
+}
+
+
+/* BUTTON 1*/
+
+#radio_btn1:checked~.active {
+    margin-left: 0;
+}
+
+
+/* BUTTON 2*/
+
+#radio_btn2:checked~.active {
+    margin-left: -25%;
+}
+
+
+/* BUTTON 3*/
+
+#radio_btn3:checked~.active {
+    margin-left: -50%;
+}
+
+
+/* BUTTON 4*/
+
+#radio_btn4:checked~.active {
+    margin-left: -75%;
+}
+
+
+/* btn */
+
+#radio_btn1:checked+label {
+    background: red;
+}
+
+#radio_btn2:checked+label {
+    background: red;
+}
+
+#radio_btn3:checked+label {
+    background: red;
+}
+
+#radio_btn4:checked+label {
+    background: red;
+}
+
+p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 615px) {
+    .slider {
+        width: 80%;
+        height: 50%;
+    }
+    .slide img {
+        width: 60%;
+        height: 70%;
+    }
+    .btn1 {
+        margin-left: 120px;
+    }
+    .btn2 {
+        margin-left: 150px;
+    }
+    .btn3 {
+        margin-left: 180px;
+    }
+    .btn4 {
+        margin-left: 210px;
+    }
+    .btn {
+        margin-top: 360px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider {
+        width: 80%;
+        height: 40%;
+    }
+    .slide img {
+        width: 45%;
+        height: 70%;
+    }
+    .btn1 {
+        margin-left: 70px;
+    }
+    .btn2 {
+        margin-left: 100px;
+    }
+    .btn3 {
+        margin-left: 130px;
+    }
+    .btn4 {
+        margin-left: 160px;
+    }
+    .btn {
+        margin-top: 290px;
+    }
+}
