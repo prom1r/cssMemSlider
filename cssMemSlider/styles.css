@@ -157,3 +157,29 @@ p {
         margin-top: 360px;
     }
 }
+
+@media (max-width: 400px) {
+    .slider {
+        width: 80%;
+        height: 40%;
+    }
+    .slide img {
+        width: 45%;
+        height: 70%;
+    }
+    .btn1 {
+        margin-left: 70px;
+    }
+    .btn2 {
+        margin-left: 100px;
+    }
+    .btn3 {
+        margin-left: 130px;
+    }
+    .btn4 {
+        margin-left: 160px;
+    }
+    .btn {
+        margin-top: 290px;
+    }
+}
